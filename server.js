@@ -7,9 +7,21 @@ bot.on('ready', () => {                                // When the bot is ready
 });
  
 bot.on('messageCreate', (msg) => {                     // When a message is created
-    if(msg.content === '1337') {                       // If the message content is "1337"
-        bot.createMessage(msg.channel.id, 'damn it');  // Send a message in the same channel with "damn it"
+    if(msg.content === 'Yuri') {                       // If the message content is "Yuri"
+        bot.createMessage(msg.channel.id, 'Just Monika');  // Send a message in the same channel with "Just Monika"
+    }
+});
+
+bot.on('messageCreate', (msg) => {                     // When a message is created
+    if(msg.content === 'Sayori') {                       // If the message content is "Sayori"
+        bot.createMessage(msg.channel.id, 'Just Monika');  // Send a message in the same channel with "Just Monika"
+    }
+});
+
+bot.on('messageCreate', (msg) => {                     // When a message is created
+    if(msg.content === 'Natsuki') {                       // If the message content is "Natsuki"
+        bot.createMessage(msg.channel.id, 'Just Monika');  // Send a message in the same channel with "Just Monika"
     }
 });
  
-bot.connect();                                         // Get the bot to connect to Discord
+bot.connect();             
